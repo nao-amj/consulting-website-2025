@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon Consulting - 未来を創造する戦略パートナー</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- ミニマルナビゲーション -->
+    <nav class="nav-minimal">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Horizon</span>
+                <span class="logo-dot"></span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-item">Home</a>
+                <a href="#philosophy" class="nav-item">Philosophy</a>
+                <a href="#services" class="nav-item">Services</a>
+                <a href="#insights" class="nav-item">Insights</a>
+                <a href="#contact" class="nav-item nav-cta">Contact</a>
+            </div>
+            <div class="nav-burger" id="navBurger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- モバイルメニュー -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" class="mobile-nav-item">Home</a>
+        <a href="#philosophy" class="mobile-nav-item">Philosophy</a>
+        <a href="#services" class="mobile-nav-item">Services</a>
+        <a href="#insights" class="mobile-nav-item">Insights</a>
+        <a href="#contact" class="mobile-nav-item">Contact</a>
+    </div>
+
+    <!-- ヒーローセクション -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="organic-shape shape-1"></div>
+            <div class="organic-shape shape-2"></div>
+            <div class="organic-shape shape-3"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">未来を</span>
+                <span class="title-line accent">創造する</span>
+                <span class="title-line">戦略パートナー</span>
+            </h1>
+            <p class="hero-subtitle">
+                複雑化するビジネス環境において、<br>
+                持続可能な成長を実現する戦略を提供します
+            </p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn-primary">
+                    <span>お問い合わせ</span>
+                    <svg class="btn-arrow" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span class="scroll-text">Scroll</span>
+        </div>
+    </section>
+
+    <!-- フィロソフィー -->
+    <section id="philosophy" class="philosophy">
+        <div class="container">
+            <div class="philosophy-grid">
+                <div class="philosophy-content">
+                    <div class="section-tag">Our Philosophy</div>
+                    <h2 class="section-title">
+                        <span class="handwritten">真のパートナーシップを</span>
+                    </h2>
+                    <p class="philosophy-text">
+                        私たちは、単なるアドバイザーではありません。
+                        お客様のビジネスに深く寄り添い、
+                        共に考え、共に成長するパートナーです。
+                    </p>
+                    <div class="philosophy-values">
+                        <div class="value-item">
+                            <div class="value-number">01</div>
+                            <h3>信頼</h3>
+                            <p>透明性と誠実さを基盤とした関係構築</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-number">02</div>
+                            <h3>革新</h3>
+                            <p>常識にとらわれない新しい価値の創造</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-number">03</div>
+                            <h3>持続性</h3>
+                            <p>長期的視点での持続可能な成長戦略</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="philosophy-visual">
+                    <div class="floating-card card-1">
+                        <span class="card-stat">98%</span>
+                        <span class="card-label">顧客満足度</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <span class="card-stat">150+</span>
+                        <span class="card-label">プロジェクト実績</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <span class="card-stat">15年</span>
+                        <span class="card-label">業界経験</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- サービス -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Our Services</div>
+                <h2 class="section-title">包括的なソリューション</h2>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-service="strategy">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 60 60">
+                            <path class="icon-path" d="M30 10 L45 25 L30 40 L15 25 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <circle cx="30" cy="25" r="5" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>戦略コンサルティング</h3>
+                    <p>ビジネスの本質を捨え、革新的な成長戦略を策定</p>
+                    <ul class="service-features">
+                        <li>市場分析と機会評価</li>
+                        <li>競争優位性の構築</li>
+                        <li>成長ロードマップ策定</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card" data-service="transformation">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 60 60">
+                            <path class="icon-path" d="M20 30 Q30 10, 40 30 T60 30" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <circle cx="30" cy="20" r="3" fill="currentColor"/>
+                            <circle cx="50" cy="30" r="3" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>デジタル変革</h3>
+                    <p>テクノロジーを活用したビジネスモデルの再構築</p>
+                    <ul class="service-features">
+                        <li>DX戦略立案</li>
+                        <li>プロセス最適化</li>
+                        <li>データ活用支援</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card" data-service="organization">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 60 60">
+                            <circle cx="30" cy="20" r="8" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <circle cx="20" cy="40" r="6" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <circle cx="40" cy="40" r="6" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M30 28 L20 34 M30 28 L40 34" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>組織開発</h3>
+                    <p>持続的成長を支える強い組織作り</p>
+                    <ul class="service-features">
+                        <li>リーダーシップ開発</li>
+                        <li>チームビルディング</li>
+                        <li>企業文化変革</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- インサイト -->
+    <section id="insights" class="insights">
+        <div class="container">
+            <div class="insights-header">
+                <div class="section-tag">Latest Insights</div>
+                <h2 class="section-title">
+                    <span class="title-gradient">知見を共有する</span>
+                </h2>
+            </div>
+            
+            <div class="insights-grid">
+                <article class="insight-card featured">
+                    <div class="insight-date">2025.06.12</div>
+                    <h3>持続可能なビジネスの未来</h3>
+                    <p>環境、社会、ガバナンスを統合した新しい経営モデルの提言</p>
+                    <a href="#" class="insight-link">
+                        Read More
+                        <svg class="link-arrow" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </a>
+                </article>
+                
+                <article class="insight-card">
+                    <div class="insight-date">2025.06.08</div>
+                    <h3>AI時代のリーダーシップ</h3>
+                    <p>人と機械の共存を実現する組織設計</p>
+                    <a href="#" class="insight-link">
+                        Read More
+                        <svg class="link-arrow" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </a>
+                </article>
+                
+                <article class="insight-card">
+                    <div class="insight-date">2025.06.01</div>
+                    <h3>グローバル市場の新潮流</h3>
+                    <p>地政学的変化がもたらすビジネス機会</p>
+                    <a href="#" class="insight-link">
+                        Read More
+                        <svg class="link-arrow" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- コンタクト -->
+    <section id="contact" class="contact">
+        <div class="contact-background">
+            <div class="contact-shape shape-1"></div>
+            <div class="contact-shape shape-2"></div>
+        </div>
+        
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="contact-title">
+                        <span class="handwritten">Let's talk</span>
+                    </h2>
+                    <p class="contact-subtitle">
+                        新しい価値創造のパートナーを<br>
+                        お探しの方は、お気軽にご連絡ください
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">✍️</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>contact@horizon-consulting.jp</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Tokyo, Japan</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🕰️</div>
+                            <div>
+                                <h4>Hours</h4>
+                                <p>Mon-Fri: 9:00 - 18:00 JST</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">お名前</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">メールアドレス</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="company" required>
+                            <label for="company">会社名</label>
+                        </div>
+                        <div class="form-group full-width">
+                            <textarea id="message" rows="4" required></textarea>
+                            <label for="message">メッセージ</label>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <span>送信する</span>
+                            <svg class="btn-arrow" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">Horizon<span class="logo-dot"></span></h3>
+                    <p class="footer-tagline">Creating Tomorrow, Today</p>
+                </div>
+                <div class="footer-links">
+                    <h4>リンク</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Services</a>
+                    <a href="#">Insights</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div class="footer-social">
+                    <h4>フォロー</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Horizon Consulting. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">プライバシーポリシー</a>
+                    <a href="#">利用規約</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
